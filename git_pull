@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# for pulling multiple git repositories within a folder
+
+find . -type d -name .git -exec sh -c "cd \"{}\"/../ && pwd && git pull" \;
